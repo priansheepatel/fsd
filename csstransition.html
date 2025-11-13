@@ -1,0 +1,82 @@
+<!-- CSS TRANSITION
+ 1. -->
+<!-- <P>que:create css program that demo. the use of multiple transitionon single element when the user hover over the div it should increase in size ,change background color rotate 360
+     becom sercular all with smooth timing,delay and different tansiction duration.</p>
+     <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color:red;
+            transition-property:width ,height,background-color,border-radius ;
+            transition-duration:3s,4s,6s,6s,5s;
+            transition-delay:2s;
+            transition-timing-function:case-in-out
+        }
+        div:hover{
+            width:200px;
+        
+            height:200px;
+            background-color:green;
+            transform:rotate(360deg);
+            border-radius:50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html> -->
+<p>when the user interect with form element colom rhan input field should smoothliy change its background-color textcolor and border-style when hover .
+    the buttonshold smothly change its back groundcolor padding and border thickness when hover,then tansictionv sholdbe visually appearing and use esing for smooth motion</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+       .i1{
+        height:40px;
+        border:2px solid green;
+        padding:10px;
+        transition:all 2s ease;
+
+       }
+       .i1:hover{
+         height:40px;
+         background-color:yellow;
+         color:blue;
+         border:2px double blue;
+
+       }
+       .b1{
+        background-color:blue;
+        color:white;
+        padding:20px;
+        border:3px double green;
+        transition:akk 2s ease;
+
+       }
+       .b1:hover{
+        background-color:white;
+        color:black;
+        padding:30px;
+        border:6px double green;
+
+       }
+    </style>
+</head>
+<body>
+    <form>
+        username:<input type="text" class="i1"><br></br>
+        <input type="button" class="b1" value="click me">
+    </form>
+</body>
+</html> 

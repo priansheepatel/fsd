@@ -1,0 +1,53 @@
+<!-- FLEXBOX PROPERTYS -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* justify-content:flex-start; */
+            align-items:flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: gray;
+            padding: 15px;
+            height: 300px;
+        }
+        .items{
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius:5px ;
+            width: 200px;
+            
+        }
+        .items:nth-child(4){
+            order:-2;
+        }
+        .items:nth-child(2){
+            order:-1;
+        }
+        .items:nth-child(7){
+            order:5;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="items">item 1</div>
+        <div class="items">item 2</div>
+        <div class="items">item 3</div>
+         <div class="items">item 4</div>
+        <div class="items">item 5</div>
+        <div class="items">item 6</div>
+         <div class="items">item 7</div>
+        <div class="items">item 8</div>
+        <div class="items">item 9</div>
+    </div>
+ </body>
+ </html>

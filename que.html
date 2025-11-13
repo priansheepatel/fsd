@@ -1,0 +1,264 @@
+<!-- (1) write a css to perform given below task
+1.add underlist with 3 list items
+2.if direct child of the ul eliment<b> then applieed font color blue and fomnt size shold be 20 px 
+3. if the direct chjild of <ul> eliment is <li> the item shold be display in red color and smaler font size -->
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul>b{
+                font-size: 20px;
+                color: blue;
+            }
+            ul>li{
+                font-size:smaller;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><b>xyz</b></li>
+            <li><b>abc</b></li>
+            <b><li>pqr</li></b>
+        </ul>
+    </body>
+    </html> -->
+<!--(2)add one div tag of 100px withdth and hight color purple write css code to change its color to red and while you hover over it  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+        }
+        div:active{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>--------hiiiiiii---------</div>
+</body>
+</html> -->
+<!-- <p>(3) degine a web page include
+1. a button that change its color its hover and
+2. when click the text input fild changes its back ground color 
+3.check box change color of label and and mix label bold when checked
+4.an unorder list where second list item side diff red text color bold font one of the list items hase a class "special",
+all oter list item have an green back ground and italic front size</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: blue;
+        }
+        button:hover{
+            background-color: navy;
+        }
+        button:active{
+            background-color: yellow;
+        }
+        input:focus{
+            background-color: rgb(23, 139, 23);
+            border: 2px solid blue;
+        }
+        input:checked+label{
+            color: rgb(146, 245, 146);
+            font-weight:bold ;
+        }
+        ul li:nth-child(2){
+            color: red;
+            font-weight:bold ;
+
+        }
+        ul li:not(.special){
+            font-style: italic;
+            background-color: rgb(150, 245, 150);
+        }
+
+
+    </style>
+</head>
+<body>
+    <button>click me</button>
+    <label for="name">name:</label>
+    <input type="text" id="name"><br></br>
+    <p>
+        <input type="checkbox" id="agree">
+        <label for="agree"> i agree all terms</label>
+    </p>
+    <ul>
+        <li>abc</li>
+        <li>pqr</li>
+        <li class="special">def</li>
+        <li>xyz</li>
+    </ul>
+
+
+</body>
+ </html> -->
+<!--<p>QUE 4:-create field username ,password,choices of sports like cricket,hoki,badminton.
+    include gender field and submit button while hovering user name and password back ground color turn yello and pink respectivley.
+    while clicking sports and gender text turn in red color.
+    both submit and reset button turn blue while hovering. use apropriate selector.
+</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     input[type=text]:hover{
+        background-color: yellow;
+     }
+     input[type=password]:hover{
+        background-color: pink;
+     }
+     .btn:hover{
+        color: blue;
+     }
+     label:active{
+        color: red;
+     }
+   </style>
+   
+</head>
+<body>
+    <form>
+        username:<input type="text"><br></br>
+        password:<input type="password"><br></br>
+        sports:<label><input type="checkbox">cricket</label><br></br>
+        <label><input type="checkbox">hockey</label><br></br>
+        <label><input type="checkbox">badminton</label><br></br>
+        gender:<label><input type="radio" name="a">male</label>
+        <label><input type="radio" name="a">female</label><br></br>
+        <input type="submit" class="btn"><br></br>
+        <input type="reset" class="btn">
+
+    </form>
+</body>
+</html> -->
+<!-- <P>que:create css program that demo. the use of multiple transitionon single element when the user hover over the div it should increase in size ,change background color rotate 360
+     becom sercular all with smooth timing,delay and different tansiction duration.</p>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color:red;
+            transition:width 5s ease-in 1s,height 6s ease-out 0.5s,background-color 7s ease-in-out 2s;
+        }
+        div:hover{
+            width:200px;
+        
+            height:200px;
+            background-color:green;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html>
+ -->
+<!-- <p>
+    write following style in seprate css file one paragraph using p tag color of first line of para should be green and text is italic
+    when you select any text hadding h1 and h2 ,background-color of selected text become gray.create one order list,
+    color of list should be green front size should be 30px and back groundcolor of third list item should be blue.
+</p> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 2</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <h1>hii</h1>
+    <h2>hello</h2>
+    <p>bye Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quae recusandae nemo vero ipsa, corrupti deserunt omnis illum molestiae. Consectetur, modi incidunt voluptatibus mollitia facere eos accusamus nostrum exercitationem quas.
+
+    </p>
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ol>
+    
+</body>
+</html> -->
+<!-- <p>
+    write html and css code to degine registration form having filds name,password,co.no,gender,submit and recet button.
+    follow below req. while clicking on name text,background-color of its input filled change to light green.
+    while hovering on password and contact no text font size of its input field will increase respectivley.
+    while clicking on gender field background-color of text change to blue.both submit and reset tag button bold and italic while hovering.
+</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* space mean decending sector aetle aena andar na badha child */
+        #i1:active input{ 
+            background-color: lightgreen;
+
+        }
+        #i2:hover input,#i3:hover input{
+            font-size:30px;
+        }
+        #i4:active{
+            background-color:blue;
+        }   
+        .btn:hover{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        
+        <label id="i1">name:<input type="text"></label><br></br>
+        <label id="i2">password:<input type="password"></label><br></br>
+        <label id="i3">contact no:<input type="tel"></label><br></br>
+        <label>gender:
+            <label id="i4"> <input type="radio" value="male" name="gender">male</label>
+            <label id="i4"><input type="radio" value="female" name="gender">female</label>
+        </label><br></br>
+        <input type="reset" value="reset" class="btn"><br></br>
+        <input type="submit" value="submit" class="btn">
+
+    </form>
+</body>
+</html> -->
+<p>
+    write html and css script to degine on benor of advertise mentusing p tag that text of advertise ment move continuosly from left to right end, than return back to right to left end.
+    use rad and font for text. advertisement should begin after 1sec loding page.
+</p>

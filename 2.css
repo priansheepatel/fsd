@@ -1,0 +1,14 @@
+p::first-line{
+    color: green;
+    front-style:italic;
+}
+h1::selection,h2::selection{
+    background-color: gray;
+}
+o1{
+    color: green;
+    front-size:30px
+}
+li:nth-child(3){
+    background-color:blue;
+}    

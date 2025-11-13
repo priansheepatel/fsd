@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a:link{
+        color: red;
+    }
+    a:visited{
+        color:green
+         ;
+    }
+    a:hover{
+        color:blue;font-size: 50px;
+    }
+    a:active{
+        color:yellow ;
+    }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank">click me</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psedoelements</title>
+    <style>
+        p::first-line{
+            color: red;
+            font-weight: bold;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+        p::before{
+            content: "note:";
+            color: green;
+        }
+        p::after{
+            content: "Byee:";
+            color: brown;
+        }
+        ul li::marker{
+            color: purple;
+            font-size: 40px;
+        }
+        ::selection{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>hiii</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores totam mollitia fugit quae repellat sequi omnis, veritatis iusto odit quisquam laborum perspiciatis esse eaque ducimus nam nobis! Doloribus, odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui libero non similique est? Provident voluptate repellendus nostrum quia cumque, numquam amet. Eligendi eum quaerat quibusdam veniam ipsa obcaecati sapiente nulla!
+
+    </p>
+    <ul>
+        <li>abc</li>
+        <li>pqr</li>
+        <li>xyz</li>
+    </ul>
+</body>
+</html>
