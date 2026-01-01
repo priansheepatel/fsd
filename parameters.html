@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // -----rest parameter (...a) ----------
+        // function fun(a,b,...c)
+        // {
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+        // fun(1,2,3,4,5)
+        function fun(a,b,...c)
+        {
+            console.log(`${a}${b}`);
+            console.log(c);
+            console.log(c[0]);
+            console.log(c.length);
+            console.log(c.indexOf('axx'));
+            console.log(c.indexOf('exx'));
+        }
+        fun('axx','bxx','cxx','dxx','exx');
+        // --------------spread operator---------------
+        let arr=[1,2,3];
+        console.log(...arr);
+        // --------------
+        function add(a,b,c)
+        {
+            return a+b+c;
+        }
+        let numbers=[10,20,30];
+        console.log(add(...numbers));
+        let obj1={a:1};
+        let obj2={b:2};
+        let combined={...obj1,...obj2}
+        console.log(combined);
+        // ----------default parameter-------------
+        function multiply(a,b=2)
+        {
+            return a*b;
+        }
+        let num1=multiply(5);
+        console.log(num1);
+        let num2=multiply(5,4);
+        console.log(num2);
+        // -----------------
+        defaultfun=(p=2,q)=>{
+            return p+q;
+        }
+        console.log(`add=${defaultfun(30)}`);
+        // ----------------
+        defaultfun=(p1,q1=2)=>{
+            return p1+q1;
+        }
+        console.log(`add=${defaultfun(30)}`);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

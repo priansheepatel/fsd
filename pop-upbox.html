@@ -1,0 +1,36 @@
+<!-- pp-up box
+ 1)alert
+ 2)confirm -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function warn()
+        {
+            alert(" warning message");
+            document.writeln("warning");
+        }
+        function conf()
+        {
+            res=confirm("do you want to continue?");
+            if(res==true)
+        {
+            document.writeln("user want");
+            return true;
+        }
+        else
+        {
+            document.writeln("user donot want");
+            return false;
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="button"  value="OK" onclick="warn()"/>
+    <input type="button"  value="ABC" onclick="conf()"/>
+</body>
+</html>

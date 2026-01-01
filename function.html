@@ -1,0 +1,50 @@
+<!-- Array methods 
+ 1)push()
+ 2)pop()
+ 3)map()
+ 4)filter()
+ 5)for each()
+ 6)includes()
+ 7)find()-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+        let fruits=["apple","banana","orange"];
+        fruits.push("mango");
+        console.log(fruits);
+        // ---------------------
+        let number=[10,20,30];
+        let removed=number.pop()
+        console.log(number);
+        console.log(removed);
+        // ------------------------
+        let num=[1,2,3,4];
+        let squre=num.map(function(i){return i*i;})
+        console.log(squre);
+        // ------------------------------------------
+        let ages=[12,18,24,14]
+        let adult=ages.filter(function(age){return age>=18;})
+        console.log(adult);
+        // ----------------------------------------------
+        let names=["Ali","abc","pqr"];
+        names.forEach(function(name){console.log("hello"+name)});
+        // --------------------------------
+        let colors=["red","oeange","green"];
+        console.log(colors.includes("green"));
+        console.log(colors.includes("blue"));
+        let users=[{id:1,name:"ali"},{id:"2",name:"abc"},{id:3,name:"pqr"}];
+        let user=users.find(function(u){return u.id==2;});
+        console.log(user);
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
