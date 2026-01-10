@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- <input type="text" onclick="change(event)">
+    <script>
+        function change(e)
+        {
+            e.target.style.backgroundColor="green";
+
+        }
+    </script>-->
+    <!-- <input type="text" onkeypress="keyinfo(event)">
+    <script>
+        function keyinfo(e)
+        {
+            // alert("event:"+e.type+"\nkey:"+e.key);
+            alert("event:"+e.type+"\nkeycode:"+e.keycode);
+        }
+    </script> -->
+    <!-- <form onsubmit="stop(event)">
+        <input type="submit" value="submit">
+
+
+    </form>
+    <script>
+        function stop(e)
+        {
+            // e.preventDefault();
+            alert("submission stopped");
+        }
+    </script> -->
+    <button id="btn">click mmmme</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){alert("button clicked");})
+    </script>
+</body> 
+</html>

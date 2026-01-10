@@ -1,0 +1,32 @@
+<!-- QUE-alert with pop up with ytext enter some thing if input fild is empty on click in submit button. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+            // var val=document.getElementById("i1").value;
+            // var val=document.forms["f1"]["t1"].value;
+            var val=document.f1.t1.value;
+            if(val.length==0)
+        {
+            alert("enter some thing")
+        }
+        else
+        {
+            alert(val)
+        }
+        }
+    </script>
+    <form onsubmit="fun(this)" name="f1">
+        <input type="text" id="i1" name="t1"/>
+        <input type="submit" value="submit"/>
+    </form>
+    
+</body>
+</html>

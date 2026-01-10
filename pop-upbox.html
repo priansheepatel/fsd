@@ -1,7 +1,10 @@
-<!-- pp-up box
+<!-- 
+ pop-up box
  1)alert
- 2)confirm -->
-<!DOCTYPE html>
+ 2)confirm
+ 3)prompt 
+ -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,10 +30,49 @@
             return false;
         }
         }
+        function getval()
+        {
+            var res=prompt("enter your name:","here");
+            document.writeln(res);
+
+        }
     </script>
 </head>
 <body>
-    <input type="button"  value="OK" onclick="warn()"/>
-    <input type="button"  value="ABC" onclick="conf()"/>
+    <input type="button"  value="alert" onclick="warn()"/>
+    <input type="button"  value="confirm" onclick="conf()"/>
+    <input type="button"  value="prompt" onclick="getval()"/>
 </body>
-</html>
+</html> -->
+<!-- PROGRAM -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM</title>
+    <script>
+        let age=prompt("enter your age");
+        let check=confirm(age+":"+"are you sure?");
+        if(check)
+    {
+        if(age>=18)
+    {
+        alert("you are eligible");
+    }
+    else
+    {
+        alert("you are noteligible");
+    }
+    }
+    else
+    {
+        alert("your verification cancled");
+    }
+
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

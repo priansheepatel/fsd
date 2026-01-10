@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData()
+        {
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    let success=false;
+                    if(success){
+                        resolve("data received");
+                    }
+                    else
+                    {
+                        reject("error");
+                    }
+                },2000);
+            });
+        }
+        async function getData()
+        {
+         
+            try{
+                let result=await fetchData();
+                console.log(result);
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        getData();
+    </script>
+</body>
+</html>
+<!-- create a small html page where you store 3 filds in local storage :product=laptop,price=50000,discount=10.retrife and display the stored product in the consoleremove the discount fild from local storage then print the updated data in console -->

@@ -1,0 +1,72 @@
+<!-- REGEX:-REGULAR EXPRESSION
+ test()
+ /pattern/modifier(mostly i lower and upper bane case chale)
+ a,b,c,ab,bc,abd->not allow
+ ae,bd,acp,abcd->allowed for[^] 
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//function fun()
+      //  {
+            // pat=/abc/i;
+            // pat=/[abc]/;
+            // pat=/[^abc]/;
+            // pat=/[^0-9]/;
+            // pat=/(x|y)/;
+            // pat=/^A/;
+            // pat=/Bo*/;
+            // pat=/Bo+/;
+            // pat=/t$/;
+            // pat=/^\d{10}$/;
+        //    // pat=/^\d{10,15}$/;
+        //     u=document.getElementById("i1").value;
+        //     if(pat.test(u))
+        // {
+        //     alert("matched");
+        // }
+        // else{
+        //     alert("not matched");
+        // }
+
+        // }
+
+        function fun()
+        {
+            pat=/^-|^@|^\d/;
+            uname=document.getElementById("i1").value;
+            pass=document.getElementById("p1").value;
+        if(uname.length==0||pass.length==0)
+        {
+            document.getElementById("test").innerHTML="must not be blankkkkkk";
+
+        }
+        else if(pat.test(uname))
+        {
+            document.getElementById("test").innerHTML="invalid";
+        }
+        else if(pass.length<6||pass.length>12)
+        {
+            document.getElementById("test").innerHTML="invalid";
+
+        }
+        else
+        {
+            document.getElementById("test").innerHTML=uname;
+        }
+        }
+    </script>
+    <!-- <input type="text" id="i1">
+    <input type="submit" onclick="fun()"> -->
+    name:<input type="text" id="i1">
+    pass:<input type="password" id="p1">
+    <input type="submit" onclick="fun()">
+    <h1 id="test"></h1>
+</body>
+</html>

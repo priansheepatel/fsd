@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+
+</head>
+<!-- <body> -->
+    <!-- <script>
+        function down(a)
+        {
+           a.innerHTML="byee";
+           a.style.color="red";
+           a.style.fontSize="40px"
+        }
+    </script> -->
+    <!-- <p onmousedown="down(this)" id="text">helooooooooooo</p> -->
+     <!-- <p onmousedown="this.style.color='red';this.innerHTML='BYE'">hello</p> -->
+      <!-- <input type="text" oninput="this.value=this.value.toUpperCase()"/>
+      <input type="text" oinpninput="this.style.backgroundColor='blue'"/>
+      <input type="text" onut="show(this.value)"/>
+      <input type="text" onchange="alert('changed')">
+      <input type="text" onblur="alert(' onblure changed')"> -->
+      <!-- <input type="text" onfocus="alert('focused')">
+      <input type="text" onfocus="showmsg()">
+      <p id="msg"></p> -->
+      
+<!-- 
+      <p id="out"></p>
+      <script> -->
+        <!--  function show(val)
+         {
+            document.getElementById("out").innerHTML=val;
+         }
+        function showmsg(){
+             document.getElementById("msg").innerHTML="hidden msg";
+
+         } -->
+    <!--    </script> -->
+        <!-- <form onsubmit="mufun()">
+            entername:<input type="text" id="fname">
+            <input type="submit" value="submit">
+        </form>
+        <script>
+            function mufun(){
+                a=document.getElementById("fname").value;
+                alert("form submitted!welcome "+a);
+            }
+        </script>
+
+</body>
+</html> -->
+<!-- write html/js to perform the task as ask below back groun color shold tern red when key is down it should trn blue while key is up -->
+ <!-- <body onkeyup="fun1(this)" onkeydown="fun2(this)">
+    <script>
+        function fun1(id)
+        {
+            id.style.backgroundColor="blue";
+        }
+        function fun2(id)
+        {
+            id.style.backgroundColor="red";
+        }
+    </script>
+
+ </body> -->
+ <!-- MOUSE EVENT -->
+<body>
+<script>
+    function oncl()
+    {
+        alert("onclicked ");
+    }
+    function ondw(a)
+    {
+        a.innerHTML="onmousedown occured";
+        a.style.color="red";
+        a.style.fontSize="40px";
+
+    }
+      function onup(b)
+    {
+        b.innerHTML="onmouseup occured";
+        b.style.color="blue";
+        b.style.fontSize="40px";
+
+    }
+      function onov(c)
+    {
+        c.innerHTML="onmouseov occured";
+        c.style.color="yellow";
+        c.style.fontSize="40px";
+
+    }
+      function onot(d)
+    {
+        d.innerHTML="onmouseout occured";
+        d.style.color="pink";
+        d.style.fontSize="40px";
+
+    }
+
+</script>
+<input type="button" onclick="oncl()" value="click me">
+<p onmousedown="ondw(this)">press</p>
+<p onmouseup="onup(this)">reliase</p>
+<p onmouseout="onot(this)">out</p>
+<p onmouseover="onov(this)">over</p>
+
+</body>
+</html> 
