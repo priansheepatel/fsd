@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON DEMO</title>
+</head>
+<body>
+    <script>
+        var p={"last name":"xyz",
+            "name":"abc",
+            "age":20,
+            "subjects":{"s1":"fsd","s2":"dm"},
+            "marks":[20,25,22]
+        };
+        // console.log("your data is"+p);
+        console.log(p["last name"]);
+        console.log("your last name is"+p["last name"]);
+        console.log("you are studying"+p.subjects.s1);
+        console.log("you are studying"+p["subjects"]["s1"]);
+        console.log("mARKS of toc are"+p.marks[2])
+    </script>
+
+
+</body>
+</html>

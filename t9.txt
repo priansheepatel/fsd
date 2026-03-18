@@ -1,0 +1,3 @@
+[{"name":"circle","diameter":8},{"name":"squre","side":10}]
+circle perimeter 50.24
+squre parimeter20

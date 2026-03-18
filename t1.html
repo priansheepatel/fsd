@@ -1,0 +1,23 @@
+<!-- write one jason string with date propertty and print date in h1 tag when click me butto is clicked. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f()
+        {
+            var obj={"dob":"2002-05-30"};
+            var d=new Date(obj.dob);
+            document.getElementById("1").
+            innerText=d;
+        }
+    </script>
+ </head>
+ <body>
+    <h1 id="1"></h1>
+    <button onclick="f()">click me</button>
+ </body>
+ </html>
+ <!--  -->

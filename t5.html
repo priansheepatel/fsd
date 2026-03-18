@@ -1,0 +1,47 @@
+<!-- // create one para and three buttons 
+// 1.first button "inc" increment font size by one px of para every 100 ms up to 200 px 
+// 2.anoter button "dec "decrement fs by 1px avry 100ms up to 20px
+// 3.third button" stop "instantly stops inc or dec .
+// inicialy fs of para is 50px and it has color green -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a">hello...</p>
+    <button onclick="inc()">
+        inc
+    </button>
+    <button onclick="dec()">
+        dec
+    </button>
+    <button onclick="stop()">
+        stop
+    </button>
+    <script>
+        fs=50;
+        function setf(fs)
+        {
+            var p=document.getElementById("a")
+            p.style.fontSize=fs+"px";
+            p.style.color="green";
+        }
+        setf(fs)
+        function inc()
+        {
+            test=setInterval(()=>{if(fs<200)setf(++fs);},100)
+        }
+         function dec()
+        {
+            test=setInterval(()=>{if(fs>20)setf(--fs);},100)
+        }
+        function stop()
+        {
+            clearInterval(test);
+        }
+    </script>
+</body>
+</html>
